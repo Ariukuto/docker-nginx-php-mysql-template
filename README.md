@@ -1,6 +1,6 @@
 # docker-nginx-php-mysql-template
 
-# Installation
+## Installation
 Klont das GIT Repo
 ```
 git clone ****
@@ -53,18 +53,18 @@ docker compose up -d --build
 
 
 
-# Verzeichnisse
+## Verzeichnisse
 
-## App
+### App
 Anwendungscode
 
-## nginx/default.conf
+### nginx/default.conf
 Webserverconfiguration wie von Symphony empfohlen
 
-## php/Dockerfile
+### php/Dockerfile
 PHP Image aus dem Docker Hub so zu erweitern, dass wir Composer und eine PHP-Erweiterung verwenden können.
 
-## docker-compose.yml
+### docker-compose.yml
 Herzstück unserer Entwicklungsumgebung. Hier werden wir die Container definieren, die wir verwenden wollen.
 
 
