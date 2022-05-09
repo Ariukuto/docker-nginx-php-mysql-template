@@ -3,7 +3,7 @@
 ## Installation
 Klont das GIT Repo
 ```
-git clone ****
+git clone git@github.com:Ariukuto/docker-nginx-php-mysql-template.git
 ```
 <br>
 
