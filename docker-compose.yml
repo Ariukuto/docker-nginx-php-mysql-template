@@ -1,0 +1,22 @@
+services:
+
+  # PHP
+  php:
+    # Standort des Dockerfiles
+    build:
+      context: ./php
+    # Inhalt des lokales app verzeichnises soll in den container unter app gespiegelt werden
+    volumes:
+      - ./app:/app
+
+  # NGINX
+  nginx:
+    # Docker Hub Image, welches benutzt werden soll
+    image: nginx
+    # lokaler Port 8080 wird mit Port 80 im Container verknüft
+    ports:
+      - 8080:80
+    volumes:
+      # Inhalt des lokales app verzeichnises soll in den container unter app gespiegelt werden
+      - ./app:/app
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
