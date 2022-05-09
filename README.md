@@ -19,7 +19,7 @@ docker compose exec php bash
 ```
 <br>
 
-Mit Composer eine neue Symfony App im Hauptverzeichnis erstellen ohen Unterordner. 
+Mit Composer kann nun z.B.  eine neue Symfony App im Hauptverzeichnis erstellt werden ( Punkt am Ende, damit kein Unterordner erstellt wird). 
 ```
 composer create-project symfony/skeleton .
 ```
